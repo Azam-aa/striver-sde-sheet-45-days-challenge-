@@ -120,3 +120,30 @@ https://github.com/Azam-aa
 
 </div>
 
+
+---
+
+---
+
+This repository documents my journey through the Striver SDE Sheet 45 Days Challenge.
+
+Topics covered:
+
+- Data Structures and Algorithms (DSA)
+- Striver SDE Sheet
+- TakeUForward Challenge
+- Java Programming
+- Coding Interview Preparation
+- LeetCode Problems
+- Problem Solving
+- Software Engineering Interview Preparation
+- Arrays
+- Strings
+- Linked Lists
+- Trees
+- Graphs
+- Dynamic Programming
+- Competitive Programming
+
+This repository contains daily solutions, notes, approaches, and learnings from the Striver SDE Sheet Challenge.
+
