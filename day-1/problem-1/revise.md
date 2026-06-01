@@ -4,7 +4,7 @@
 
 * Find a zero.
 * Mark its entire row and column.
-* Use a special value to avoid affecting future traversals.
+* Use a special value to avoid affecting future traversals.s
 * Too many traversals.
 
 Time Complexity: O(N × M × (N + M))
