@@ -1,47 +1,48 @@
-# Set Matrix Zeroes
+# Sort Colors
 
-## Brute Force
+## Core Trigger
 
-* Find a zero.
-* Mark its entire row and column.
-* Use a special value to avoid affecting future traversals.s
-* Too many traversals.
-
-Time Complexity: O(N × M × (N + M))
-Space Complexity: O(1)
+Array contains only 0, 1 and 2.
 
 ---
 
-## Better Solution
+## Approach
 
-* Use extra row[] and col[] arrays.
-* Store which rows and columns need to become zero.
-* Traverse again and update matrix.
-
-Time Complexity: O(N × M)
-Space Complexity: O(N + M)
+* Use Dutch National Flag Algorithm.
+* Maintain low, mid and high pointers.
+* 0 goes to left.
+* 1 stays in middle.
+* 2 goes to right.
 
 ---
 
-## Optimal Solution
+## Rules
 
-* Use first row and first column as markers.
-* No extra row[] and col[] arrays.
-* Use col0 variable for first column.
-* Phase 1: Mark rows and columns.
-* Phase 2: Update inner matrix using markers.
-* Phase 3: Handle first row.
-* Phase 4: Handle first column.
+* 0 → swap(low, mid), low++, mid++
+* 1 → mid++
+* 2 → swap(mid, high), high--
 
-Time Complexity: O(N × M)
-Space Complexity: O(1)
+---
+
+## Gotcha
+
+* After handling 2, do NOT increment mid.
+* Check the new element again.
+
+---
+
+## Complexity
+
+TC: O(N)
+
+SC: O(1)
 
 ---
 
 ## Memory Trick
 
-Brute → Extra Traversals
+0 → Left
 
-Better → Extra Space
+1 → Middle
 
-Optimal → Use First Row + First Column as Markers
+2 → Right
