@@ -1,47 +1,40 @@
-# Set Matrix Zeroes
+# Best Time to Buy and Sell Stock
 
-## Brute Force
+## Core Trigger
 
-* Find a zero.
-* Mark its entire row and column.
-* Use a special value to avoid affecting future traversals.s
-* Too many traversals.
-
-Time Complexity: O(N × M × (N + M))
-Space Complexity: O(1)
+Find maximum profit from one buy and one sell.
 
 ---
 
-## Better Solution
+## Approach
 
-* Use extra row[] and col[] arrays.
-* Store which rows and columns need to become zero.
-* Traverse again and update matrix.
-
-Time Complexity: O(N × M)
-Space Complexity: O(N + M)
+* Keep track of minimum price seen so far.
+* Calculate profit if sold today.
+* Update maximum profit.
 
 ---
 
-## Optimal Solution
+## Gotcha
 
-* Use first row and first column as markers.
-* No extra row[] and col[] arrays.
-* Use col0 variable for first column.
-* Phase 1: Mark rows and columns.
-* Phase 2: Update inner matrix using markers.
-* Phase 3: Handle first row.
-* Phase 4: Handle first column.
+* Buy must happen before sell.
+* Start tracking from first element.
 
-Time Complexity: O(N × M)
-Space Complexity: O(1)
+---
+
+## Why?
+
+* Cheapest price gives maximum future profit.
+
+---
+
+## Complexity
+
+TC: O(N)
+
+SC: O(1)
 
 ---
 
 ## Memory Trick
 
-Brute → Extra Traversals
-
-Better → Extra Space
-
-Optimal → Use First Row + First Column as Markers
+Min Price → Profit Today → Max Profit
