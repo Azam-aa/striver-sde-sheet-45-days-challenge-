@@ -1,48 +1,57 @@
-# Sort Colors
+# Merge Overlapping Intervals
 
 ## Core Trigger
 
-Array contains only 0, 1 and 2.
+Intervals are given.
+Need to combine overlapping intervals.
 
 ---
 
 ## Approach
 
-* Use Dutch National Flag Algorithm.
-* Maintain low, mid and high pointers.
-* 0 goes to left.
-* 1 stays in middle.
-* 2 goes to right.
+* Sort intervals by start time.
+* Take first interval.
+* Check overlap with previous interval.
+* Overlap -> Merge.
+* No Overlap -> Add new interval.
 
 ---
 
-## Rules
+## Overlap Condition
 
-* 0 → swap(low, mid), low++, mid++
-* 1 → mid++
-* 2 → swap(mid, high), high--
+currentStart <= previousEnd
+
+---
+
+## Merge Logic
+
+newEnd = max(previousEnd, currentEnd)
 
 ---
 
 ## Gotcha
 
-* After handling 2, do NOT increment mid.
-* Check the new element again.
+Sort first.
+Without sorting, overlap checking fails.
 
 ---
 
 ## Complexity
 
-TC: O(N)
+TC: O(N log N)
 
-SC: O(1)
+SC: O(N)
 
 ---
 
 ## Memory Trick
 
-0 → Left
+Sort
 
-1 → Middle
+↓
 
-2 → Right
+Overlap?
+
+Yes -> Merge
+
+No -> Add New Interval
