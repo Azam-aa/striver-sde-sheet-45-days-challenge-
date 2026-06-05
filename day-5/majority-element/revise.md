@@ -1,29 +1,22 @@
-# Best Time to Buy and Sell Stock
+# Majority Element
 
 ## Core Trigger
 
-Find maximum profit from one buy and one sell.
+Element appears more than N/2 times.
 
 ---
 
 ## Approach
 
-* Keep track of minimum price seen so far.
-* Calculate profit if sold today.
-* Update maximum profit.
+Moore's Voting Algorithm.
+
+Maintain candidate and count.
 
 ---
 
-## Gotcha
+## Pattern
 
-* Buy must happen before sell.
-* Start tracking from first element.
-
----
-
-## Why?
-
-* Cheapest price gives maximum future profit.
+Voting Algorithm
 
 ---
 
@@ -37,4 +30,14 @@ SC: O(1)
 
 ## Memory Trick
 
-Min Price → Profit Today → Max Profit
+Count = 0
+
+↓
+
+Pick Candidate
+
+↓
+
+Same → Count++
+
+Different → Count--
