@@ -1,36 +1,32 @@
-# Maximum Subarray
+# Search in 2D Matrix
 
 ## Core Trigger
 
-Find maximum sum contiguous subarray.
+Matrix is sorted.
+
+Treat matrix as a 1D array.
 
 ---
 
-## Approach (Kadane's Algorithm)
+## Approach
 
-* Keep a running sum.
-* Add current element.
-* Update maximum sum.
-* If running sum becomes negative, reset it to 0.
+Binary Search
 
----
+row = mid / m
 
-## Gotcha
-
-* Update maxSum before resetting.
-* Handles all negative arrays correctly.
+col = mid % m
 
 ---
 
-## Why Reset?
+## Pattern
 
-Negative sum will reduce future sums.
+Binary Search
 
 ---
 
 ## Complexity
 
-TC: O(N)
+TC: O(log(N*M))
 
 SC: O(1)
 
@@ -38,4 +34,8 @@ SC: O(1)
 
 ## Memory Trick
 
-Add → Update Max → Reset Negative
+Flatten Matrix
+
+↓
+
+Binary Search
