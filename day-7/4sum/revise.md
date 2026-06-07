@@ -1,49 +1,41 @@
-# Reverse Pairs
+# 4Sum
 
 ## Core Trigger
 
-arr[i] > 2 * arr[j]
+Find 4 numbers.
 
-i < j
+Target Sum.
 
 ---
 
 ## Approach
 
-Merge Sort
+Sort Array.
 
-Count pairs before merge.
+Fix i and j.
+
+Use Two Pointers.
 
 ---
 
 ## Pattern
 
-Merge Sort
-
-Divide and Conquer
+Sorting + Two Pointers
 
 ---
 
 ## Complexity
 
-TC: O(N log N)
+TC: O(N³)
 
-SC: O(N)
+SC: O(1)
 
 ---
 
 ## Memory Trick
 
-Divide
-
+Sort
 ↓
-
-Count Pairs
-
+Fix 2 Numbers
 ↓
-
-Merge
-
-↓
-
-Return Count
+2 Pointer Search
