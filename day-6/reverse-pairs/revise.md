@@ -35,15 +35,9 @@ SC: O(N)
 ## Memory Trick
 
 Divide
-
 ↓
-
 Count Pairs
-
 ↓
-
 Merge
-
 ↓
-
 Return Count

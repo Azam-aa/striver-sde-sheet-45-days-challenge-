@@ -1,26 +1,24 @@
-# Majority Element II
+# Two Sum
 
 ## Core Trigger
 
-Element appears more than N/3 times.
-
-Maximum 2 answers possible.
+Find 2 numbers whose sum = target.
 
 ---
 
 ## Approach
 
-Extended Moore Voting Algorithm.
+HashMap
 
-Track 2 candidates.
+Store number and index.
 
-Verify at end.
+Check complement.
 
 ---
 
 ## Pattern
 
-Moore Voting
+Hashing
 
 ---
 
@@ -28,20 +26,18 @@ Moore Voting
 
 TC: O(N)
 
-SC: O(1)
+SC: O(N)
 
 ---
 
 ## Memory Trick
 
-Candidate1
-
-Candidate2
+Target - Current
 
 ↓
 
-Voting
+Found?
 
 ↓
 
-Verification
+Return Indexes
