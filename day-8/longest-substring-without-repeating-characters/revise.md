@@ -37,15 +37,9 @@ SC: O(N)
 ## Memory Trick
 
 Expand Right
-
 ↓
-
 Duplicate?
-
 ↓
-
 Move Left
-
 ↓
-
 Update Length
