@@ -1,35 +1,43 @@
-# Max Consecutive Ones
+# N Meetings In One Room
 
 ## Core Trigger
 
-Find longest streak of 1s.
+Maximum meetings.
+
+Single room.
 
 ---
 
 ## Approach
 
-Count consecutive ones.
+Sort by ending time.
 
-Reset on zero.
+Pick earliest ending meeting.
 
 ---
 
 ## Pattern
 
-Array Traversal
+Greedy
 
 ---
 
 ## Complexity
 
-TC: O(N)
+TC: O(N log N)
 
-SC: O(1)
+SC: O(N)
 
 ---
 
 ## Memory Trick
 
-1 → Count++
+Sort By End
 
-0 → Reset
+↓
+
+Take Earliest Finish
+
+↓
+
+Max Meetings
