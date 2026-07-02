@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class ValidAnagram {
 
     public static boolean isAnagram(
